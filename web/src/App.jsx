@@ -49,7 +49,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='main'>
 
       <Form onSubmit={sendMessage}>
         <Form.Group
