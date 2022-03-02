@@ -33,6 +33,38 @@
   color:antiquewhite
 }
 
+.me{
+  background-color: blue;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+  padding:10px;
+  border-radius: 5px;
+}
+.dialogflow{
+  background-color: crimson;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding:10px;
+  border-radius: 5px;
+  margin-top: 10px;
+
+
+}
+.header{
+  text-align: center;
+  padding-top: 50px;
+}
+.input{
+  /* margin-top: 100px; */
+  /* padding:100px; */
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 30px;
+}
+.main-inp{
+  margin-right: 10px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

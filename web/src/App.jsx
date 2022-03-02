@@ -50,15 +50,22 @@ function App() {
 
   return (
     <div className='main'>
+    <h1 className='header'>TALK TO CHATBOT</h1>
 
       <Form onSubmit={sendMessage}>
         <Form.Group
+                  className="input"
+                  // className={["mb-3",'input']}
+
+
           style={{
             display: "flex",
-            justifyContent: "space-between"
-          }} className="mb-3" controlId="formBasicEmail">
+            justifyContent: "space-around"
+          }}  controlId="formBasicEmail">
 
           <Form.Control
+
+          className='main-inp'
             onChange={(e) => { setText(e.target.value) }}
             type="text"
             placeholder="Enter your message"
@@ -73,10 +80,12 @@ function App() {
       <br />
       <br />
 
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <div 
+       style={{ display: "flex", flexDirection: "column" }}>
 
         {messages?.map((eachMessage, eachMessageIndex) => (
-          <div key={`${eachMessageIndex}-message`} style={{
+          <div className={ (eachMessage.sender === "user") ? "me" : "dialogflow"}
+           key={`${eachMessageIndex}-message`} style={{
             display: "flex",
             justifyContent: (eachMessage.sender === "user") ? "flex-end" : "flex-start"
           }}>
